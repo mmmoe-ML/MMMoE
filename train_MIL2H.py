@@ -108,8 +108,8 @@ def train_model(rank, world_size, cv_test):
     valid_label = []
     test_label = []
 
-    list_subtype = [['DLBCL'],['FL']]#,['AITL'],['ATLL'],['CHL'],['RL']]
-    list_use = ['DLBCL','FL']#,'AITL','ATLL','CHL','RL']
+    list_subtype = [['CHL'],['RL']]
+    list_use = ['CHL','RL']
 
     num_data = []
     max_main = 100 # maximum number of each class
@@ -177,7 +177,7 @@ def train_model(rank, world_size, cv_test):
     model_params = f'./model_params/MIL6c_cv-{cv_test}_epoch-{epoch_m}.pth'
 
     # log file
-    log = f'./train_log/MIL2B_log_cv-{cv_test}.csv'
+    log = f'./train_log/MIL2H_log_cv-{cv_test}.csv'
 
     if rank == 0:
         # write header
@@ -301,7 +301,7 @@ def train_model(rank, world_size, cv_test):
         f.close()
         # save model parameters
         if rank == 0:
-            model_params = f'./model_params/MIL2B_cv-{cv_test}_epoch-{epoch}.pth'
+            model_params = f'./model_params/MIL2H_cv-{cv_test}_epoch-{epoch}.pth'
             torch.save(ddp_model.module.state_dict(), model_params)
 
 if __name__ == '__main__':
