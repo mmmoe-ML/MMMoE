@@ -14,11 +14,11 @@ Code to learn the propsoed multimodal MoE model. \
 
 Following codes provides the training of the proposed model for fold #1 in 5-fold cross-validation.\
 
-CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python train_MIL6c.py 1\
-CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python train_MIL2B.py 1\
-CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python train_MIL2T.py 1\
-CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python train_MIL2H.py 1\
-CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python train_mmMoE.py 1 0.8 0\
+CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python train_MIL6c.py 1 \
+CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python train_MIL2B.py 1 \
+CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python train_MIL2T.py 1 \
+CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python train_MIL2H.py 1 \
+CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python train_mmMoE.py 1 0.8 0 \
 
 ## test_mmMoE.py
 
