@@ -47,14 +47,14 @@ Code to train and evaluate other models in the literature.
 
 ## att_mmMoE.py
 
-Code to compute gating weights and attention weights in the proposed method.
+Code to compute gating weights and attention weights in the proposed method.\
 Following command provide caluclated each weight using the trained model.
 
 CUDA_VISIBLE_DEVICES=0 python att_mmMoE.py 1 0.8 0
 
 ## vis_MoE.py
 
-Code to visualize calculated gating and attention weights.
+Code to visualize calculated gating and attention weights.\
 Following command provide visualizaion results.
 
 CUDA_VISIBLE_DEVICES=0 python vis_mmMoE.py mmMoE 0.8
@@ -77,7 +77,7 @@ Code to create dataset (bags).
 
 ## Required Data
 
-./Data : Whole slide images (SVS) \
-./csv/[DLBCL,FL,AITL,ATLL,CHL,RL].csv : files written coordinate of each patch\
+./Data/svs/ : Whole slide images (SVS) \
+./Data/csv/[DLBCL,FL,AITL,ATLL,CHL,RL].csv : files written coordinate of each patch\
 ./slideID/[DLBCL,FL,AITL,ATLL,CHL,RL].txt : files written slideID of each subtype\
 ./FCM.csv : FCM data
