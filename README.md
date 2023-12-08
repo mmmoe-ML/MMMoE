@@ -41,7 +41,7 @@ Following code provides the evaluation results of test data for 1st fold in 5-fo
 
 CUDA_VISIBLE_DEVICES=0 python test_mmMoE.py 1 0.8 0
 
-## train_*.py, test_*.py
+## train_"*".py, test_"*".py
 
 Code to train and evaluate other models in the literature.
 
